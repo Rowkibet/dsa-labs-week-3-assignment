@@ -3,26 +3,31 @@
 // Steps for computing average
 
 //Input; User defined stopping point
-//Output; Average of odd numbers
+//Output; Number of odd numbers and their average
 
 SET odd_sum to 0
 SET odd_numbers to 0
-Declare OddAverage
+DECLARE oddAverage
+DECLARE stopping_point
 
-Print "Enter a number where the counting of odd numbers will stop"
-input stopping_point
+PRINT
+	 "Enter a number where the counting of odd numbers will stop"
+INPUT stopping_point
 
 
 FOR LOOP:
 SET counter to 1
-Break when counter reaches the stoppingPoint value
-increment counter by 1
+BREAK when counter reaches the stopping_point
+INCREMENT counter by 1
 	DO
 		IF counter mod 2 != 0
 			THEN
-				PRINT 
-					odd_sum = odd_numbers + counter
+				odd_sum = odd_sum + counter
+				odd_numbers = odd_numbers + 1
+				PRINT
+					odd_numbers
 ENDFOR
+
 COMPUTE 
 	OddAverage = odd_sum / odd_numbers
 PRINT

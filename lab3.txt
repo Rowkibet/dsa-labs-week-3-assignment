@@ -1,0 +1,33 @@
+// Pseudocode for computing the average of odd numbers
+
+// Steps for computing average
+
+//Input; User defined stopping point
+//Output; Average of odd numbers
+
+SET odd_sum to 0
+SET odd_numbers to 0
+Declare OddAverage
+
+Print "Enter a number where the counting of odd numbers will stop"
+input stopping_point
+
+
+FOR LOOP:
+SET counter to 1
+Break when counter reaches the stoppingPoint value
+increment counter by 1
+	DO
+		IF counter mod 2 != 0
+			THEN
+				PRINT 
+					odd_sum = odd_numbers + counter
+ENDFOR
+COMPUTE 
+	OddAverage = odd_sum / odd_numbers
+PRINT
+	odd_numbers
+PRINT
+	oddAverage
+	
+	
